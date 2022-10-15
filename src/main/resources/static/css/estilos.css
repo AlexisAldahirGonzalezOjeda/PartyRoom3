@@ -1,0 +1,97 @@
+#cabecera{  
+    margin: 0px;
+    padding: 0px;  
+    width: auto;
+    padding: 20px;
+    height: 75px; 
+    background-color: #1B4D3E;   
+}
+p{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+} 
+h1{
+    color: white;
+}
+h2{
+    color: #1d244a;
+}
+tr > th{
+    color: #1d244a;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+} 
+.borrar{
+    position: relative; 
+    left: 20%; 
+    width:80px;
+    height:25px;
+    border:1px solid red;
+    background-color: red;
+    color: white;
+}
+
+.borrar:hover{
+    border:1px solid red;
+    background-color:#f34336; 
+}
+
+.editar{
+    position: relative; 
+    left: 20%; 
+    width:80px;
+    height:25px;
+    border:3px solid green;
+    background-color: green;
+    color: white;
+}
+
+.editar:hover{
+    border:1px solid green;
+    background-color:#00722e; 
+}
+
+.insertar{
+    position: relative;  
+    width:80px;
+    height:25px;
+    border:1px solid #0099FF;
+    background-color: #0099FF;
+    color: white;
+}
+
+.insertar:hover{
+    border:1px solid #0099FF;
+    background-color:#4682b4; 
+}
+
+.consultar{
+    position: relative;  
+    width:80px;
+    height:25px;
+    border:3px solid #848482;
+    background-color: #848482;
+    color: white;
+}
+
+.consultar:hover{
+    border:1px solid #848482;
+    background-color:#BEBEBE;  
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1d244a;
+  color: white;
+}
+table tr:hover {
+    background-color: #ddd;
+} 

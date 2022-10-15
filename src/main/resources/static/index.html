@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alquiler de salones de Fiesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body> 
+
+        <div id="cabecera">
+            <h1>Aplicación para Alquiler de Salones de Fiesta</h1>
+        </div>
+        <b><p>
+                !Bienvenidos¡ En esta página encontrarán el lugar ideal <br/>
+                para alquilar salones de fiestas para cumpleaños, bodas, bautizos, etc.<br/>
+                Todo lo que buscas en un solo lugar. ¡Registrate YA!
+            </p></b>
+
+        <h2>Salones de Fiesta</h2>
+
+        <div>
+            <input type="number" id="idPartyRoom" placeholder="Id Salón" disabled> 
+            <input type="text" id="nameRoom" placeholder="Nombre Salón de Fiesta">
+            <input type="text" id="ownerRoom" placeholder="Propietario Salón de Fiesta"> 
+            <input type="number" id="capacityRoom" placeholder="Capacidad Salón de Fiesta">
+            <input type="text" id="descriptionRoom" placeholder="Descripción Salón de Fiesta">
+        </div> 
+
+        <button onclick="traerInformacionRoom()" class="consultar">Consultar</button>
+        <button onclick="guardarInformacionRoom()" class="insertar">Insertar</button>
+
+        <br><br>
+
+        <div id="resultadoRoom" style="overflow-x: auto;"> 
+        </div>
+
+        <h2>Clientes</h2>
+
+        <div>
+            <input type="number" id="idCliente" placeholder="Id Cliente" disabled>
+            <input type="text" id="nameCli" placeholder="Nombre Cliente">
+            <input type="email" id="emailCli" placeholder="Correo Cliente">
+            <input type="password" id="passwordCli" placeholder="Contraseña Cliente"> 
+            <input type="number" id="ageCli" placeholder="Edad Cliente"> 
+        </div> 
+
+        <button onclick="traerInformacionCli()" class="consultar">Consultar</button>
+        <button onclick="guardarInformacionCli()" class="insertar">Insertar</button>
+
+        <br><br>
+
+        <div id="resultadoCli" style="overflow-x: auto;"> 
+        </div>
+
+        <h2>Mensajes</h2>
+
+        <div> 
+            <input type="number" id="idMensaje" placeholder="Id Mensaje" disabled>
+            <input type="number" id="idCli" placeholder="Id Cliente">
+            <input type="number" id="idRoom" placeholder="Id Salón de Fiesta">
+            <input type="text" id="messageText" placeholder="Mensaje"> 
+        </div>
+
+        <button onclick="traerInformacionMens()" class="consultar">Consultar</button>
+        <button onclick="guardarInformacionMens()" class="insertar">Insertar</button>
+
+        <br><br>
+
+        <div id="resultadoMens" style="overflow-x: auto;"> 
+        </div>
+
+        <h2>Reservas</h2>
+
+        <div>
+            <input type="number" id="idReserva" placeholder="Id Reserva" disabled>
+            <input type="number" id="idCli2" placeholder="Id Cliente">
+            <input type="number" id="idRoom2" placeholder="Id Salón de Fiesta">
+            <input type="date" id="startDate">
+            <input type="date" id="devolutionDate"> 
+            <datalist id="Estado">
+                <option value="completed"></option>
+                <option value="cancelled"></option> 
+            </datalist>  
+            <input type="text" id="status" list="Estado" placeholder="completed">
+        </div>
+
+        <button onclick="traerInformacionRes()" class="consultar">Consultar</button>
+        <button onclick="guardarInformacionRes()" class="insertar">Insertar</button>
+
+        <br><br>
+        
+        <div id="resultadoRes" style="overflow-x: auto;"> 
+        </div> 
+
+    </body>  
+    <script type="text/javascript" src="js/funcionesCli.js"></script>
+    <script type="text/javascript" src="js/funcionesMens.js"></script>
+    <script type="text/javascript" src="js/funcionesRes.js"></script>
+    <script type="text/javascript" src="js/funcionesRoom.js"></script>
+</html>
